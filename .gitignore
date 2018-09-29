@@ -35,6 +35,13 @@ testem.log
 /typings
 
 package-lock.json
+/.metadata
 # System Files
 .DS_Store
 Thumbs.db
+
+/.DS_Store
+/.gitignore
+.metadata/*
+.recommenders/*
+RemoteSystemsTempFiles/*
