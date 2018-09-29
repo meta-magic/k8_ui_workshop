@@ -1,0 +1,44 @@
+{
+    "productId": 2,
+    "category": "2",
+    "name": "Apple Mobile",
+    "description": " Iphone 10 32 GB",
+    "price": 90000,
+    "reviews": [
+      {
+        "id": "2",
+        "author": "Ketan Gote",
+        "desc": "Very Good, value for money",
+        "rating": 9,
+        "reviewDate": "2018-09-28T23:53:30.339+0000"
+      },
+      {
+        "id": "2",
+        "author": "Sagar Jadhav",
+        "desc": "Average Phone",
+        "rating": 5,
+        "reviewDate": "2018-09-28T23:53:30.339+0000"
+      },
+      {
+        "id": "2",
+        "author": "Dattaram Gawas",
+        "desc": "Good",
+        "rating": 3,
+        "reviewDate": "2018-09-28T23:53:30.339+0000"
+      },
+      {
+        "id": "2",
+        "author": "Deepali Arvind",
+        "desc": "Bad",
+        "rating": 4,
+        "reviewDate": "2018-09-28T23:53:30.339+0000"
+      },
+      {
+        "id": "2",
+        "author": "Kedar Kokil",
+        "desc": "Very Bad, not value for money",
+        "rating": 1,
+        "reviewDate": "2018-09-28T23:53:30.339+0000"
+      }
+    ]
+  }

@@ -1,0 +1,23 @@
+[
+    {
+      "productId": 1,
+      "category": "2",
+      "name": "Apple Mobile",
+      "description": " Iphone 10 32 GB",
+      "price": 90000
+    },
+    {
+      "productId": 2,
+      "category": "2",
+      "name": "Samsung Mobile",
+      "description": " Samsung 10 32 GB",
+      "price": 4000
+    },
+    {
+      "productId": 3,
+      "category": "2",
+      "name": "Song Mobile",
+      "description": " Song 10 32 GB",
+      "price": 10000
+    }
+  ]
