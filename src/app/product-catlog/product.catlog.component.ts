@@ -23,7 +23,8 @@ export class ProductCatlogueComponent implements OnInit {
     fetchData() {
         const headers = new HttpHeaders().append('Content-Type', 'application/json;charset=UTF-8');
         let response: any;
-        this.http.get("assets/productcatlog.json", { headers }).subscribe(
+        //assets/productcatlog.json
+        this.http.get("productms/product/findall", { headers }).subscribe(
             resp => {
                 response = resp;
             },
@@ -36,8 +37,7 @@ export class ProductCatlogueComponent implements OnInit {
         );
     }
 
-    productDetails(node:any){
-        debugger;
+    productReview(node:any){
         this.router.navigate(['product-details',node.productId]);
     }
 

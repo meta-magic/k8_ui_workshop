@@ -5,12 +5,19 @@
         <amexio-card [header]="true" [footer]="true">
             <amexio-header>{{node.name}}</amexio-header>
             <amexio-body>
-                <amexio-image [path]="'https://via.placeholder.com/200x100'" ></amexio-image><br/> Price: {{node.price}} <br/>
-                <br/>
-                <amexio-label>{{node.description}}</amexio-label>
+                <amexio-row>
+                    <amexio-column [size] =6 >
+                            <amexio-image [path]="'https://via.placeholder.com/200x100'" ></amexio-image>
+                    </amexio-column>
+                    <amexio-column [size] =6 >
+                            <amexio-label>Price: {{node.price}} </amexio-label>
+                            <amexio-label>{{node.description}}</amexio-label>       
+                    </amexio-column>
+                </amexio-row>
             </amexio-body>
             <amexio-action>
-
+                <amexio-button (onClick)="productReview(node)" [label]="'Review'" [type]="'green'" [tooltip]="'Review'">
+                </amexio-button> &nbsp;
                 <amexio-button (onClick)="addToCart(node)" [label]="'Add to Cart'" [type]="'yellow'" [tooltip]="'Add to Cart'">
                 </amexio-button>
             </amexio-action>
