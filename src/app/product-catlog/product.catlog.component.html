@@ -10,9 +10,22 @@
                 <amexio-label>{{node.description}}</amexio-label>
             </amexio-body>
             <amexio-action>
-                <amexio-button (onClick)="productDetails(node)" [label]="'Product details'" [type]="'yellow'" [tooltip]="'Product details'">
+
+                <amexio-button (onClick)="addToCart(node)" [label]="'Add to Cart'" [type]="'yellow'" [tooltip]="'Add to Cart'">
                 </amexio-button>
             </amexio-action>
         </amexio-card>
     </amexio-column>
 </amexio-row>
+
+<amexio-notification
+    [data]="notify"
+    [vertical-position]="'bottom'"
+    [horizontal-position]="'center'"
+    [close-on-escape] ="true"
+    [background-color]="'black '"
+    [foreground-color]="'white'"
+    [auto-dismiss-msg]="true"
+    [auto-dismiss-msg-interval]="6000">
+
+</amexio-notification>

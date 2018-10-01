@@ -11,6 +11,7 @@ import { Router } from "@angular/router";
 export class ProductCatlogueComponent implements OnInit {
     
     data: any;
+    notify : any[] = [];
 
     constructor(private http: HttpClient, private router: Router) {
     }
@@ -22,7 +23,7 @@ export class ProductCatlogueComponent implements OnInit {
     fetchData() {
         const headers = new HttpHeaders().append('Content-Type', 'application/json;charset=UTF-8');
         let response: any;
-        this.http.get("productms/product/findall", { headers }).subscribe(
+        this.http.get("assets/productcatlog.json", { headers }).subscribe(
             resp => {
                 response = resp;
             },
@@ -38,5 +39,9 @@ export class ProductCatlogueComponent implements OnInit {
     productDetails(node:any){
         debugger;
         this.router.navigate(['product-details',node.productId]);
+    }
+
+    addToCart(node:any){
+        this.notify.push('Product added to cart!');
     }
 }
