@@ -1,1 +1,33 @@
-{{data | json}}
+
+<amexio-card [header]="true" [footer]="true">
+    <amexio-header>Product details</amexio-header>
+    <amexio-body>
+        <amexio-row>
+            <amexio-column [size] =3>
+                <amexio-image [path]="'https://via.placeholder.com/200x100'" ></amexio-image><br/>
+                <amexio-label size="large-bold">{{data.name}}</amexio-label><br/>
+                <amexio-label>Price: {{data.price}} </amexio-label><br/>
+                <amexio-label>{{data.description}}</amexio-label>
+            </amexio-column>
+            <amexio-column [size] =9>
+                <amexio-listbox [header]="'Reviews'"
+                                [data]="data.reviews"
+                                [display-field]="'author'">
+                                <ng-template #amexioBodyTmpl let-row="row">
+                                    <amexio-row>
+                                        <amexio-column [size] =6 >
+                                            <amexio-rating-input [(ngModel)]="row.rating" [max]="10" [read-only]="isReadonly"> </amexio-rating-input>
+                                        </amexio-column>
+                                        <amexio-column [size] =6 >
+                                            {{row.desc}} <br/>
+                                            <amexio-label size="small-bold">{{row.author}}</amexio-label><br/>
+                                        </amexio-column>
+                                    </amexio-row>
+                                </ng-template>
+                </amexio-listbox>                
+            </amexio-column>
+        </amexio-row>
+    </amexio-body>
+   
+</amexio-card>
+
