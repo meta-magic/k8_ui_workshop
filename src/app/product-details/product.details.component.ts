@@ -26,7 +26,7 @@ export class ProductDetailsComponent implements OnInit {
     private fetchdata(id:string): void{
         const headers = new HttpHeaders().append('Content-Type', 'application/json;charset=UTF-8');
         let response: any;
-        this.http.get("productms/product/find/"+id, { headers }).subscribe(
+        this.http.get("productms/product/catalogue/"+id, { headers }).subscribe(
             resp => {
                 response = resp;
             },
