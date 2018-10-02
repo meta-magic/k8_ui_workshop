@@ -24,7 +24,7 @@ export class ProductCatlogueComponent implements OnInit {
         const headers = new HttpHeaders().append('Content-Type', 'application/json;charset=UTF-8');
         let response: any;
         //assets/productcatlog.json
-        this.http.get("productms/product/findall", { headers }).subscribe(
+        this.http.get("productms/product/catalogue", { headers }).subscribe(
             resp => {
                 response = resp;
             },
