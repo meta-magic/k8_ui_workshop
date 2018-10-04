@@ -11,7 +11,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class ProductDetailsComponent implements OnInit {
     
     data : any;
-
+    version: string;
+  
     constructor(private http: HttpClient,private activatedRoute: ActivatedRoute) { 
 
     }
@@ -34,7 +35,8 @@ export class ProductDetailsComponent implements OnInit {
              
             },
             () => {
-               this.data = response;
+               this.data = response.response;
+               this.version = response.version;
             }
         );
     }
