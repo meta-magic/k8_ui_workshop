@@ -12,7 +12,7 @@ export class ProductCatlogueComponent implements OnInit {
     
     data: any;
     notify : any[] = [];
-    version : string:
+    version : string;
     
     constructor(private http: HttpClient, private router: Router) {
     }
