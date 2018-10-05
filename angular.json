@@ -24,7 +24,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/amexio-ng-extensions/styles/css/at-md-black.css"
+              "node_modules/amexio-ng-extensions/styles/css/at-md-rasberry-sangria.css"
             ],
             "scripts": []
           },
